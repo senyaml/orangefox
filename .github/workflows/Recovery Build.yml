@@ -126,8 +126,8 @@ jobs:
         files: |
           ${{ steps.pwd.outputs.workspace-folder }}/fox_${{ github.event.inputs.MANIFEST_BRANCH }}/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/*.img
           ${{ steps.pwd.outputs.workspace-folder }}/fox_${{ github.event.inputs.MANIFEST_BRANCH }}/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/*.zip
-          ${{ steps.pwd.outputs.workspace-folder }}/fox_${{ github.event.inputs.MANIFEST_BRANCH }}/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/*vendor*.img
-          workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/*vendor*.img
+          ${{ steps.pwd.outputs.workspace-folder }}/fox_${{ github.event.inputs.MANIFEST_BRANCH }}/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/*vendorboot*.img
+          workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/*vendorboot*.img
           workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/${{ github.event.inputs.BUILD_TARGET }}.img
           workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/*.zip
           
